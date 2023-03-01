@@ -46,6 +46,15 @@ public class Main {
         linkedListRemoveFirst.getLength();
         linkedListRemoveFirst.printList();  
 
+        System.out.println("*****Get index******");
+        LinkedList linkedListGet = new LinkedList(1);
+        linkedListGet.append(2);
+        linkedListGet.append(3);
+
+        System.out.println(linkedListGet.get(1).value + "\n");
+
+        linkedListGet.printList();          
+
 
     }
 }
