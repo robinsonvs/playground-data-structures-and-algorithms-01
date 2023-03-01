@@ -34,5 +34,18 @@ public class Main {
         linkedList.printList();        
 
 
+        System.out.println("*****Remove first******");
+        LinkedList linkedListRemoveFirst = new LinkedList(1);
+        linkedListRemoveFirst.append(2);
+        linkedListRemoveFirst.append(3);
+
+        System.out.println(linkedListRemoveFirst.removeFirst().value);
+        System.out.println(linkedListRemoveFirst.removeFirst().value);
+        System.out.println(linkedListRemoveFirst.removeFirst().value);
+
+        linkedListRemoveFirst.getLength();
+        linkedListRemoveFirst.printList();  
+
+
     }
 }
