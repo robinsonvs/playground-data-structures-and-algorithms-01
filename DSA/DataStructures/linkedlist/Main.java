@@ -17,12 +17,21 @@ public class Main {
 
         System.out.println("****Remove last*******");
 
-        System.out.println(linkedList.removeLast().toString());
-        System.out.println(linkedList.removeLast().toString());
+        System.out.println(linkedList.removeLast().value);
+        System.out.println(linkedList.removeLast().value);
         System.out.println(linkedList.removeLast());
 
         linkedList.getLength();
         linkedList.printList();
+
+        System.out.println("*****Prepend******");
+        linkedList.append(2);
+        linkedList.append(3);
+
+        linkedList.prepend(1);
+
+        linkedList.getLength();
+        linkedList.printList();        
 
 
     }
