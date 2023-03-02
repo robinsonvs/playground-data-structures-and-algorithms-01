@@ -55,6 +55,16 @@ public class Main {
 
         linkedListGet.printList();          
 
+        System.out.println("*****Set index******");
+        LinkedList linkedListSet = new LinkedList(1);
+        linkedListSet.append(2);
+        linkedListSet.append(3);
+
+        linkedListSet.printList();
+
+        System.out.println(linkedListSet.set(1, 4));
+
+        linkedListSet.printList();           
 
     }
 }
