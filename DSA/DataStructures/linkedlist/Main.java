@@ -64,7 +64,19 @@ public class Main {
 
         System.out.println(linkedListSet.set(1, 4));
 
-        linkedListSet.printList();           
+        linkedListSet.printList();         
+        
+        
+        System.out.println("*****Insert index******");
+        LinkedList linkedListInsert = new LinkedList(1);
+        linkedListInsert.append(2);
+        linkedListInsert.append(3);
+
+        linkedListInsert.printList();
+
+        System.out.println(linkedListInsert.insert(3, 4));
+
+        linkedListInsert.printList();     
 
     }
 }
