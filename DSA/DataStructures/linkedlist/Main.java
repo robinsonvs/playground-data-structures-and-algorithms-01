@@ -90,5 +90,18 @@ public class Main {
 
         linkedListRemoveIndex.printList();    
 
+
+        System.out.println("*****Reverse******");
+        LinkedList linkedListReverse = new LinkedList(1);
+        linkedListReverse.append(2);
+        linkedListReverse.append(3);
+        linkedListReverse.append(4);
+
+        linkedListReverse.printList();
+
+        linkedListReverse.reverse();
+
+        linkedListReverse.printList(); 
+
     }
 }
