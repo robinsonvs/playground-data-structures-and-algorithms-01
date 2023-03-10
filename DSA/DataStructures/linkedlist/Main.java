@@ -78,5 +78,17 @@ public class Main {
 
         linkedListInsert.printList();     
 
+
+        System.out.println("*****Remove index******");
+        LinkedList linkedListRemoveIndex = new LinkedList(1);
+        linkedListRemoveIndex.append(2);
+        linkedListRemoveIndex.append(3);
+
+        linkedListRemoveIndex.printList();
+
+        System.out.println("**" + linkedListRemoveIndex.remove(1).value);
+
+        linkedListRemoveIndex.printList();    
+
     }
 }
