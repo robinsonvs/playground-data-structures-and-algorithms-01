@@ -24,11 +24,24 @@ public class DoubleLinkedList {
     }
 
 
+    public void append(int value) {
+        Node newNode = new Node(value);
+        if (length == 0) {
+            this.head = newNode;
+            this.tail = newNode;
+        } else {
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = newNode;
+        }
+        length++;
+    }
 
 
-    public void printlList() {
+    public void printList() {
         Node temp = head;
         while (temp != null) {
+            System.out.println(temp.value);
             temp = temp.next;
         }
     }
