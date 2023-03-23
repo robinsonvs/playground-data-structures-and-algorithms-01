@@ -54,6 +54,20 @@ public class DoubleLinkedList {
     }
 
 
+    public void prepend(int value) {
+        Node newNode = new Node(value);
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.next = head;
+            head.prev = newNode;
+            head = newNode;
+        }
+        length++;
+    }
+
+
     public void printList() {
         Node temp = head;
         while (temp != null) {

@@ -32,6 +32,15 @@ public class Main {
         // (0) items - returns null
         System.out.println(myDoubleLLRemoveLast.removeLast().value);
         
+
+        System.out.println("****** Prepend ***********");
+        DoubleLinkedList myDoubleLLPrepende = new DoubleLinkedList(2);
+        myDoubleLLPrepende.append(3);
+        myDoubleLLPrepende.printList();        
+
+        myDoubleLLPrepende.prepend(1);
+    
+        myDoubleLLPrepende.printList();   
         
     }
 
