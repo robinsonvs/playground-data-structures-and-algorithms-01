@@ -7,9 +7,9 @@ public class DoubleLinkedList {
     private int length;
 
     class Node {
-        private int value;
-        private Node next;
-        private Node prev;
+        int value;
+        Node next;
+        Node prev;
 
         Node(int value) {
             this.value = value;
@@ -35,6 +35,22 @@ public class DoubleLinkedList {
             tail = newNode;
         }
         length++;
+    }
+
+
+    public Node removeLast() {
+        if (length == 0) return null;
+        Node temp = tail;
+        if (length == 1) {
+            head = null;
+            tail = null;
+        } else {
+            tail = tail.prev;
+            tail.next = null;
+            temp.prev = null;
+        }        
+        length--;
+        return temp;
     }
 
 
