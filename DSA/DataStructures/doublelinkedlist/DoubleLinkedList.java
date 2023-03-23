@@ -67,6 +67,16 @@ public class DoubleLinkedList {
         length++;
     }
 
+    
+    public Node removeFirst() {
+        if (length == 0) return null;
+        Node temp = head;
+        head = head.next;
+        head.prev = null;
+        length--;
+        return temp;
+    }
+
 
     public void printList() {
         Node temp = head;

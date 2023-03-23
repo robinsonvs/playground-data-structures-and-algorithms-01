@@ -41,6 +41,16 @@ public class Main {
         myDoubleLLPrepende.prepend(1);
     
         myDoubleLLPrepende.printList();   
+
+
+        System.out.println("****** Remove First ***********");
+        DoubleLinkedList myDoubleLLRemoveFirst = new DoubleLinkedList(1);
+        myDoubleLLRemoveFirst.append(2);
+        myDoubleLLRemoveFirst.printList();        
+
+        System.out.println(myDoubleLLRemoveFirst.removeFirst().value);
+    
+        myDoubleLLRemoveFirst.printList();           
         
     }
 
