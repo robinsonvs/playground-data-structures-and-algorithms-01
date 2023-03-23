@@ -51,6 +51,14 @@ public class Main {
         System.out.println(myDoubleLLRemoveFirst.removeFirst().value);
     
         myDoubleLLRemoveFirst.printList();           
+
+        System.out.println("****** Get ***********");
+        DoubleLinkedList myDoubleLLGet = new DoubleLinkedList(1);
+        myDoubleLLGet.append(2);
+        myDoubleLLGet.append(3);
+        myDoubleLLGet.printList();        
+
+        System.out.println(myDoubleLLGet.get(1).value);
         
     }
 
