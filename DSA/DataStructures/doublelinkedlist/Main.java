@@ -59,6 +59,15 @@ public class Main {
         myDoubleLLGet.printList();        
 
         System.out.println(myDoubleLLGet.get(1).value);
+
+        System.out.println("****** Set ***********");
+        DoubleLinkedList myDoubleLLSet = new DoubleLinkedList(1);
+        myDoubleLLSet.append(2);
+        myDoubleLLSet.append(3);
+        myDoubleLLSet.printList();        
+
+        System.out.println(myDoubleLLSet.set(1, 6));
+        myDoubleLLSet.printList();        
         
     }
 
