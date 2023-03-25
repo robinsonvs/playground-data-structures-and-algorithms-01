@@ -69,6 +69,14 @@ public class Main {
         System.out.println(myDoubleLLSet.set(1, 6));
         myDoubleLLSet.printList();        
         
+        System.out.println("****** Insert ***********");
+        DoubleLinkedList myDoubleLLInsert = new DoubleLinkedList(1);
+        myDoubleLLInsert.append(2);
+        myDoubleLLInsert.append(3);
+        myDoubleLLInsert.printList();        
+
+        System.out.println(myDoubleLLInsert.insert(3, 6));
+        myDoubleLLInsert.printList();    
     }
 
 
