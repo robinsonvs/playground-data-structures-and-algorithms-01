@@ -8,7 +8,6 @@ public class Main {
         myDoubleLL.getHead();
         myDoubleLL.getTail();
         myDoubleLL.getLength();
-    
         myDoubleLL.printList();
 
         System.out.println("****** Append ***********");
@@ -16,15 +15,14 @@ public class Main {
 
         myDoubleLLAppend.printList();        
         myDoubleLLAppend.append(2);
-    
         myDoubleLLAppend.printList();        
+
 
         System.out.println("****** Remove Last ***********");
         DoubleLinkedList myDoubleLLRemoveLast = new DoubleLinkedList(1);
         myDoubleLLRemoveLast.append(2);
         myDoubleLLRemoveLast.append(3);
         myDoubleLLRemoveLast.printList();        
-
         // (2) items - returns 2 Node
         System.out.println(myDoubleLLRemoveLast.removeLast().value);
         // (1) items - returns 1 Node
@@ -39,7 +37,6 @@ public class Main {
         myDoubleLLPrepende.printList();        
 
         myDoubleLLPrepende.prepend(1);
-    
         myDoubleLLPrepende.printList();   
 
 
@@ -49,8 +46,8 @@ public class Main {
         myDoubleLLRemoveFirst.printList();        
 
         System.out.println(myDoubleLLRemoveFirst.removeFirst().value);
-    
         myDoubleLLRemoveFirst.printList();           
+
 
         System.out.println("****** Get ***********");
         DoubleLinkedList myDoubleLLGet = new DoubleLinkedList(1);
@@ -59,6 +56,7 @@ public class Main {
         myDoubleLLGet.printList();        
 
         System.out.println(myDoubleLLGet.get(1).value);
+
 
         System.out.println("****** Set ***********");
         DoubleLinkedList myDoubleLLSet = new DoubleLinkedList(1);
@@ -69,6 +67,7 @@ public class Main {
         System.out.println(myDoubleLLSet.set(1, 6));
         myDoubleLLSet.printList();        
         
+
         System.out.println("****** Insert ***********");
         DoubleLinkedList myDoubleLLInsert = new DoubleLinkedList(1);
         myDoubleLLInsert.append(2);
@@ -77,6 +76,16 @@ public class Main {
 
         System.out.println(myDoubleLLInsert.insert(3, 6));
         myDoubleLLInsert.printList();    
+
+
+        System.out.println("****** Remove ***********");
+        DoubleLinkedList myDoubleLLRemove = new DoubleLinkedList(1);
+        myDoubleLLRemove.append(2);
+        myDoubleLLRemove.append(3);
+        myDoubleLLRemove.printList();        
+
+        System.out.println(myDoubleLLRemove.remove(1));
+        myDoubleLLRemove.printList();          
     }
 
 
