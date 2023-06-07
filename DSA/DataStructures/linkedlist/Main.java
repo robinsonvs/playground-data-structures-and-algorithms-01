@@ -27,6 +27,22 @@ public class Main {
 
         System.out.println("\nLinked list:");
         appendLinkedList.printList();
-        
+        System.out.println();
+
+        //------------------------------------------------------
+
+        LinkedList removeLastLinkedList = new LinkedList(1);
+        removeLastLinkedList.append(2);
+
+        //(2)Items - returns 2 Node
+        System.out.println(removeLastLinkedList.removeLast().value);        
+        //(1)Item - returns 1 Node
+        System.out.println(removeLastLinkedList.removeLast().value);        
+        //(0)Item - returns null
+        System.out.println(removeLastLinkedList.removeLast());        
+        System.out.println();
+
+        //------------------------------------------------------
+
     }
 }

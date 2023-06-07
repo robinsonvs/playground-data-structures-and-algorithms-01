@@ -7,8 +7,8 @@ public class LinkedList {
     private int length;
 
     class Node {
-        private int value;
-        private Node next;
+        public int value;
+        public Node next;
 
         public Node(int value) {
             this.value = value;
@@ -58,5 +58,25 @@ public class LinkedList {
             tail = newNode;
         }
         length++;
+    }
+
+    public Node removeLast() {
+        if (length == 0) {
+            return null;
+        }
+        Node temp = head;
+        Node pre = head;
+        while (temp.next != null) {
+            pre = temp;
+            temp = temp.next;
+        }
+        tail = pre;
+        tail.next = null;
+        length--;
+        if (length == 0) {
+            head = null;
+            tail = null;
+        }
+        return temp;
     }
 }
