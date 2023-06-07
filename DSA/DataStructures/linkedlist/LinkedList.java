@@ -23,23 +23,40 @@ public class LinkedList {
     }
 
     public void getHead() {
-        System.out.println(this.head == null ? "Head: null" : "Head: " + this.head.value);;
+        System.out.println(head == null ? "Head: null" : "Head: " + head.value);;
     }
 
     public void getTail() {
-        System.out.println(this.tail == null ? "Tail: null" : "Tail: " + this.tail.value);
+        System.out.println(tail == null ? "Tail: null" : "Tail: " + tail.value);
     }
 
     public void getLength() {
-        System.out.println("Length: " + this.length);
+        System.out.println("Length: " + length);
     }
 
     public void printList() {
-        Node temp = this.head;
+        Node temp = head;
         while (temp != null) {
             System.out.println(temp.value);
             temp = temp.next;
         }
     }
     
+    public void makeEmpty() {
+        head = null;
+        tail = null;
+        length = 0;
+    }
+
+    public void append(int value) {
+        Node newNode = new Node(value);
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+        length++;
+    }
 }
