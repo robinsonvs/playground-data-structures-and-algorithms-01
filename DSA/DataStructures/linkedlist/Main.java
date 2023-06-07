@@ -92,6 +92,7 @@ public class Main {
 
         System.out.println("\nLinked list:");
         prependLinkedList.printList();
+        System.out.println();
         /*
             EXPECTED OUTPUT:
             Before prepend():
@@ -112,6 +113,30 @@ public class Main {
             2
             3
         */        
+
+        //------------------------------------------------------
+
+        LinkedList removeFirstLinkedList = new LinkedList(2);
+        removeFirstLinkedList.append(1);
+
+        // (2) Items - Returns 2 Node
+        System.out.println(removeFirstLinkedList.removeFirst().value);
+        // (1) Item - Returns 1 Node
+        System.out.println(removeFirstLinkedList.removeFirst().value);
+        // (0) Items - Returns null
+        System.out.println(removeFirstLinkedList.removeFirst());     
+        System.out.println();
+        /*
+            EXPECTED OUTPUT:
+            ----------------
+            2
+            1
+            null
+        */           
+        //------------------------------------------------------
+
+
+
 
     }
 }
