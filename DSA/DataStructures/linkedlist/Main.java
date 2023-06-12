@@ -151,6 +151,37 @@ public class Main {
 
         //------------------------------------------------------
 
+        LinkedList setLinkedList = new LinkedList(0);
+        setLinkedList.append(1);
+        setLinkedList.append(2);
+        setLinkedList.append(3);
+
+        System.out.println("Linked list before set():");
+        setLinkedList.printList();
+        
+        setLinkedList.set(2, 99);
+
+        System.out.println("\nLinked list after set():");
+        setLinkedList.printList();
+        /*
+            EXPECTED OUTPUT:
+            ----------------
+            Linked List before set():
+            0
+            1
+            2
+            3
+            
+            Linked List after set():
+            0
+            1
+            99
+            3
+        */       
+        
+        //------------------------------------------------------
+
+        
 
     }
 }
