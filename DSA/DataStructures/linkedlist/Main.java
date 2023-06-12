@@ -136,6 +136,20 @@ public class Main {
         //------------------------------------------------------
 
 
+        LinkedList getLinkedList = new LinkedList(0);
+        getLinkedList.append(1);
+        getLinkedList.append(2);
+        getLinkedList.append(3);
+
+        System.out.println(getLinkedList.get(3).value);
+        System.out.println();
+        /*
+            EXPECTED OUTPUT:
+            ----------------
+            3
+        */
+
+        //------------------------------------------------------
 
 
     }
