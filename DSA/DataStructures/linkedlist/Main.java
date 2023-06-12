@@ -181,7 +181,53 @@ public class Main {
         
         //------------------------------------------------------
 
-        
+        LinkedList insertLinkedList = new LinkedList(1);
+        insertLinkedList.append(3);
+
+        System.out.println("LL before insert():");
+        insertLinkedList.printList();
+
+        insertLinkedList.insert(1, 2);
+
+        System.out.println("\nLL after insert(2) in niddle");
+        insertLinkedList.printList();
+
+        insertLinkedList.insert(0, 0);
+
+        System.out.println("\nLL after insert(0) at beginning:");
+        insertLinkedList.printList();
+
+        insertLinkedList.insert(4, 4);
+
+        System.out.println("\nLL after insert(4) at end:");
+        insertLinkedList.printList();
+        /*
+            EXPECTED OUTPUT:
+            ----------------
+            LL before insert():
+            1
+            3
+
+            LL after insert(2) in middle:
+            1
+            2
+            3
+
+            LL after insert(0) at beginning:
+            0
+            1
+            2
+            3
+
+            LL after insert(4) at end:
+            0
+            1
+            2
+            3
+            4
+        */
+        //------------------------------------------------------
+
 
     }
 }
