@@ -201,6 +201,7 @@ public class Main {
 
         System.out.println("\nLL after insert(4) at end:");
         insertLinkedList.printList();
+        System.out.println();
         /*
             EXPECTED OUTPUT:
             ----------------
@@ -228,6 +229,62 @@ public class Main {
         */
         //------------------------------------------------------
 
+        LinkedList removeLinkedList = new LinkedList(1);
+        removeLinkedList.append(2);
+        removeLinkedList.append(3);
+        removeLinkedList.append(4);
+        removeLinkedList.append(5);
+
+        System.out.println("LL before remove():");
+        removeLinkedList.printList();
+
+
+        System.out.println("\nRemoved node:");
+        System.out.println(removeLinkedList.remove(2).value);
+        System.out.println("LL after remove() in middle:");
+        removeLinkedList.printList();
+
+        System.out.println("\nRemoved node:");
+        System.out.println(removeLinkedList.remove(0).value);
+        System.out.println("LL after remove() of first node:");
+        removeLinkedList.printList();        
+
+        System.out.println("\nRemoved node:");
+        System.out.println(removeLinkedList.remove(2).value);
+        System.out.println("LL after remove() of last node:");
+        removeLinkedList.printList();                
+        /*
+            EXPECTED OUTPUT:
+            ----------------
+            LL before remove():
+            1
+            2
+            3
+            4
+            5
+
+            Removed node:
+            3
+            LL after remove() in middle:
+            1
+            2
+            4
+            5
+
+            Removed node:
+            1
+            LL after remove() of first node:
+            2
+            4
+            5
+
+            Removed node:
+            5
+            LL after remove() of last node:
+            2
+            4
+        */
+        //------------------------------------------------------
 
     }
 }
