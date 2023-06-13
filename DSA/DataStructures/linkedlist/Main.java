@@ -252,7 +252,8 @@ public class Main {
         System.out.println("\nRemoved node:");
         System.out.println(removeLinkedList.remove(2).value);
         System.out.println("LL after remove() of last node:");
-        removeLinkedList.printList();                
+        removeLinkedList.printList();   
+        System.out.println();             
         /*
             EXPECTED OUTPUT:
             ----------------
@@ -283,6 +284,36 @@ public class Main {
             LL after remove() of last node:
             2
             4
+        */
+        //------------------------------------------------------
+
+        LinkedList reverseLinledList = new LinkedList(1);
+        reverseLinledList.append(2);
+        reverseLinledList.append(3);
+        reverseLinledList.append(4);
+
+        System.out.println("LL before reverse():");
+        reverseLinledList.printList();
+
+        reverseLinledList.reverse();
+
+        System.out.println("\nLL after reverse():");
+        reverseLinledList.printList();
+        System.out.println();
+        /*
+            EXPECTED OUTPUT:
+            ----------------
+            LL before reverse():
+            1
+            2
+            3
+            4
+            
+            LL after reverse():
+            4
+            3
+            2
+            1
         */
         //------------------------------------------------------
 
